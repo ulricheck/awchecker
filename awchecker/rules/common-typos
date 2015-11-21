@@ -51,8 +51,32 @@ this lead to         % phrase "led to" if past tense, "leads to" if present.
 on on                % phrase double word.
 has is               % phrase choose
 description their    % phrase saw this, clearly wrong.
-including:  % syntax I prefer no colon after including, which already says a list is coming.
-[a-z]\([A-Z]  % syntax put a space before parens, even when introducing acronyms.
-without and without % phrase saw this.
-can be result       % phrase saw this typo.
-
+including:           % syntax I prefer no colon after including, which already says a list is coming.
+[a-z]\([A-Z]         % syntax put a space before parens, even when introducing acronyms.
+without and without  % phrase saw this.
+can be result        % phrase saw this typo.
+and\/or              % phrase strunk & white
+anticipate           % phrase strunk & white
+as \s good \s or \s better \s than % phrase strunk & white
+as \s yet            % phrase strunk & white
+as \s to \s whether  % phrase strunk & white
+certainly            % phrase strunk & white
+factor               % phrase strunk & white
+feature              % phrase strunk & white
+finalize             % phrase strunk & white
+importantly          % phrase strunk & white
+insightful           % phrase strunk & white
+in[ ]terms[ ]off     % phrase strunk & white
+interesting(?:ly)?   % phrase strunk & white
+irregardless         % phrase strunk & white
+meaningful(?:ly)?    % phrase strunk & white
+nice(?:ly)?          % phrase strunk & white
+one \s of \s the \s most % phrase strunk & white
+respective(?:ly)?    % phrase strunk & white
+(?:most|very) \s unique % phrase strunk & white
+utilize              % phrase strunk & white
+very                 % phrase strunk & white
+the fact that        % phrase strunk & white
+rather               % phrase strunk & white
+little               % phrase strunk & white
+pretty               % phrase strunk & white

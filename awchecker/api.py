@@ -1,4 +1,5 @@
 import os
+import sys
 import string
 import re
 
@@ -50,11 +51,13 @@ def match(censored_phrases, text):
                 context = line[m.start() - extra: m.end() + extra]
                 problems.append((ind+1, m.span(), context, regex.pattern, reason))
     problems = sorted(problems, key=lambda x: x[0])
-    problems = ['L%d[%d:%d]:\t%s\t(%s)' % (p[0], p[1][0], p[1][1], p[2], p[4]) for p in problems]
+    problems = ['%d:%d Warning Warning 01: %s' % (p[0], p[1][0], p[4]) for p in problems]
     return problems
 
-def check(self, code, filename):
-    """Run academic-writing-checker on code and return the output."""
 
-    print ("Called academic-writing-checker ...")
-    return []
+def main():
+    problems = match(get_rules(), sys.stdin.read())
+
+    sys.stderr.write("Received %d problems" % len(problems))
+    sys.stdout.write("\n".join(problems))
+

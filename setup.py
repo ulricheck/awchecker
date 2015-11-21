@@ -6,9 +6,6 @@ except ImportError:
     use_setuptools()
     from setuptools import setup, find_packages
 
-from distutils.core import setup, Extension
-import numpy
-
 
 setup(name = "awchecker",
       version = '0.1',
@@ -21,9 +18,6 @@ setup(name = "awchecker",
       license = "BSD License",
       requires=[
       ],
-      #ext_modules=[Extension('awchecker.external._transformations',
-      #                       ['awchecker/external/transformations.c'],
-      #                       include_dirs=[numpy.get_include()])],
       zip_safe=False,
       long_description = """\
 Use regular expressions to identify problems with academic writing .. based on multiple projects found on the net..""",
@@ -36,4 +30,9 @@ Use regular expressions to identify problems with academic writing .. based on m
         "Programming Language :: Python :: 2.7",
         "Topic :: Software Development :: Libraries :: Python Modules",
         ],
+        entry_points={
+            'console_scripts': [
+                'awchecker = awchecker.api:main',
+                ],
+      },
       )
