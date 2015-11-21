@@ -57,7 +57,5 @@ def match(censored_phrases, text):
 
 def main():
     problems = match(get_rules(), sys.stdin.read())
-
-    sys.stderr.write("Received %d problems" % len(problems))
     sys.stdout.write("\n".join(problems))
 

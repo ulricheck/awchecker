@@ -25,5 +25,5 @@ cf\.[^\\]                    % phrase cf. should get an escaped space "\ "
 in section \\ref             % phrase should have ~ between section and ref
 section~\\ref                % capitalize capitalize section when saying Section 6.
 \\(sub)?section\{Intro\}     % syntax spell it out.
-\b((?:et\sal\.|i\.e\.|etc\.|vs\.) ) % style slash escape the space
+\b((?:et\sal\.|i\.e\.|etc\.|vs\.) ) % syntax slash escape the space
 \b(,\set\sal\.)              % syntax no comma before et al.
