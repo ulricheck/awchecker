@@ -19,3 +19,4 @@ loosing              % spelling you almost certainly mean "losing".  use "loosen
 aforementioned       % phrase too pretentious.
 important to         % phrase "valued by"?
 notion               % phrase avoid this weak phrase. (thanks brian bershad!)
+([.?]\s*However)     % phrase avoid starting a sentence with However,
